@@ -58,21 +58,48 @@
   /* imagen de fondo */
   background-image: url("../images/curve.png");
   /* altura */
-  height: 200px;
+  height: 50px;
   /* acupe el tamaño del div que tiene */
   background-size: cover;
   /* alinear hacia el centro y para arriba */
   background-position: center top;
-  padding: 15%;
+  padding: 20%;
   display: flex;
 }
 
 .product{
   /* espaciado entreun elemento y otro */
   padding: 10px;
+  /* agregar un margen para top, para que la tarjeta suba */
+  margin-top: -280px;
 }
 
 .product .content{
-  background-color: red;
-  padding: 20px;
+  background-color: width;
+  padding: 15px;
+  /* agregar una sombra a la tarjeta el primero es x el segundo y y el tercero la profundidad */
+  /* para calibrar el color usar el inspect en la web */
+  box-shadow: 0 0 1px #b4b4b4;;
+}
+
+.img_content{
+  text-align: center;
+}
+
+.main_button{
+  background-color: #7ACC2D;
+  /* paar que ocupe todo el ancho */
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  color: white;
+  border: 0px;
+  /* para color el cursor de manita */
+  cursor: pointer;
+  /* colocar un borde radius esquinas */
+  border-radius: 2px;
+}
+
+.main_button:hover{
+  background-color: #3f7010;
 }
