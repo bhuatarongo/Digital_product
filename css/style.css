@@ -1,12 +1,33 @@
+/* variables */
+
+/* desde google font buscamos la fuente y copiamos el codigo para importar*/
+/* puedes customizarlo */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+:root{
+/* variables para colores */
+--green-color:#7ACC2D;
+--white-color:white;
+--black-color:#313337;
+/* tipografia */
+--normal:12px;
+/* espaciado */
+--space:10px;
+/* box shadow */
+--box:0 0 1px #b4b4b4;
+}
+
+/* * */
  html,body{
    /* espaciado que tiene hacia dentro */
    padding: 0px;
    /* merge es el spaciado que tiene hacia fuera */
    margin: 0px;
    /* tamaño de tipografi */
-   font-size: 12px;
+   font-size: var(--normal);
    /* cambiamos la fuente */
-   font-family: monospace;
+   /*este codigo lo sacamos de google fonts*/
+   font-family: 'Open Sans', sans-serif;
    background:yellow;
  }
 
@@ -14,11 +35,11 @@
    /* colocar horizontalmente  */
    display: flex;
    /* color de fondo */
-   background-color: #7ACC2D;
+   background-color: var(--green-color);
    /* agregamos espaciado */
-   padding: 10px;
+   padding: var(--space);
    /* cambiamos color de texto */
-   color: white;
+   color: var(--white-color);
    /* separa de uno al otro, lugar al otro del logo vs lista */
    justify-content: space-between;
    /* alinear hacia el cento verticalmente */
@@ -36,13 +57,13 @@
 
 /* a veces hay que ser especificos para quitar algunos estilos predeterminados */
  nav li a{
-   color:black;
+   color:var(--black-color);
    text-decoration: none;
  }
 
  /* ahora agregaremos un efecto de cambio de color para el nav */
  nav li a:hover{
-   color:white;
+   color:var(--white-color);
  }
 
  /* ******************************* main section */
@@ -69,17 +90,17 @@
 
 .product{
   /* espaciado entreun elemento y otro */
-  padding: 10px;
+  padding: var(--space);
   /* agregar un margen para top, para que la tarjeta suba */
   margin-top: -280px;
 }
 
 .product .content{
-  background-color: width;
-  padding: 15px;
+  background-color: var(--white-color);
+  padding: var(--space);
   /* agregar una sombra a la tarjeta el primero es x el segundo y y el tercero la profundidad */
   /* para calibrar el color usar el inspect en la web */
-  box-shadow: 0 0 1px #b4b4b4;;
+  box-shadow: var(--box);
 }
 
 .img_content{
@@ -87,12 +108,12 @@
 }
 
 .main_button{
-  background-color: #7ACC2D;
+  background-color: var(--green-color);
   /* paar que ocupe todo el ancho */
   width: 100%;
-  padding: 10px;
-  font-size: 12px;
-  color: white;
+  padding: var(--space);
+  font-size: var(--normal);
+  color: var(--white-color);
   border: 0px;
   /* para color el cursor de manita */
   cursor: pointer;
