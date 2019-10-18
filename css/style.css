@@ -7,6 +7,7 @@
    font-size: 12px;
    /* cambiamos la fuente */
    font-family: monospace;
+   background:yellow;
  }
 
  nav{
@@ -43,3 +44,35 @@
  nav li a:hover{
    color:white;
  }
+
+ /* ******************************* main section */
+
+.main_section{
+  /* se le agrega un espaciado de 20 porciento */
+  padding: 15%;
+  /* alineamos al centro */
+  text-align: center;
+}
+
+.products{
+  /* imagen de fondo */
+  background-image: url("../images/curve.png");
+  /* altura */
+  height: 200px;
+  /* acupe el tamaño del div que tiene */
+  background-size: cover;
+  /* alinear hacia el centro y para arriba */
+  background-position: center top;
+  padding: 15%;
+  display: flex;
+}
+
+.product{
+  /* espaciado entreun elemento y otro */
+  padding: 10px;
+}
+
+.product .content{
+  background-color: red;
+  padding: 20px;
+}
