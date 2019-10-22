@@ -4,8 +4,9 @@
 /* puedes customizarlo */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
-:root{
 /* variables para colores */
+:root{
+/* colores */
 --green-color:#7ACC2D;
 --white-color:white;
 --black-color:#313337;
@@ -13,6 +14,7 @@
 --normal:12px;
 /* espaciado */
 --space:10px;
+--space-2:20px;
 /* box shadow */
 --box:0 0 1px #b4b4b4;
 }
@@ -28,7 +30,13 @@
    /* cambiamos la fuente */
    /*este codigo lo sacamos de google fonts*/
    font-family: 'Open Sans', sans-serif;
-   background:yellow;
+   background:white;
+   color: var(--black-color);
+ }
+
+ /* asignarle a todos los "p" un tamaño de texto */
+ p{
+   font-size: var(--normal);
  }
 
  nav{
@@ -44,13 +52,17 @@
    justify-content: space-between;
    /* alinear hacia el cento verticalmente */
    align-items: center;
+   /* un achon del 100% */
+   /* width: 100%;
+   min-height: 60px; */
  }
+
  nav ul{
    display: flex;
  }
 
  nav li{
-   padding-left: 20px;
+   padding-left: 10px;
    /* quitar los estilos predeterminados de lista */
    list-style: none;
  }
@@ -66,6 +78,10 @@
    color:var(--white-color);
  }
 
+ hr{
+   opacity: .2;
+ }
+
  /* ******************************* main section */
 
 .main_section{
@@ -79,28 +95,32 @@
   /* imagen de fondo */
   background-image: url("../images/curve.png");
   /* altura */
-  height: 50px;
+  height: 95px;
   /* acupe el tamaño del div que tiene */
   background-size: cover;
   /* alinear hacia el centro y para arriba */
   background-position: center top;
-  padding: 20%;
+  background-repeat: no-repeat;
+  padding: 15%;
   display: flex;
+  justify-content: center;
 }
 
 .product{
   /* espaciado entreun elemento y otro */
-  padding: var(--space);
+  padding: var(--space-2);
   /* agregar un margen para top, para que la tarjeta suba */
-  margin-top: -280px;
+  margin-top: -226px;
 }
 
 .product .content{
-  background-color: var(--white-color);
+  background: var(--white-color);
   padding: var(--space);
   /* agregar una sombra a la tarjeta el primero es x el segundo y y el tercero la profundidad */
   /* para calibrar el color usar el inspect en la web */
   box-shadow: var(--box);
+  border-radius: 3px;
+
 }
 
 .img_content{
@@ -123,4 +143,94 @@
 
 .main_button:hover{
   background-color: #3f7010;
+}
+
+/* ------- reto 2 -------------------------------------*/
+
+/* beneficios ------------------------- */
+.beneficios{
+ /* altura */
+ /* height: 50px; */
+ padding: 10%;
+ display: flex;
+ justify-content: center;
+}
+
+.beneficio{
+  /* margin-top: -200px;
+  width: 200px; */
+  padding: 20px;
+  text-align: center;
+}
+
+.beneficios img{
+  max-height: 100px;
+}
+
+.text_beneficio{
+  text-align: justify;
+}
+
+/* menciones ------------------------- */
+
+h2.titulo_menciones{
+  text-align:center;
+  /* margin-top: 200px; */
+}
+
+.menciones{
+  justify-content: center;
+  display: flex;
+  padding: 5%;
+}
+
+.mencion{
+  padding: var(--space);
+}
+
+.img_content_menciones{
+  width: 100%;
+  margin-top: 0px;
+  margin: 0;
+}
+
+.menciones img{
+width: 100%;
+}
+
+
+
+.content_mention{
+  box-shadow: -1px 1px 20px 0px #b4b4b4;
+}
+
+.mencion .text{
+  padding: var(--space);
+  margin-top: 0px;
+}
+
+.text h3{
+  margin-top: 0px;
+}
+
+.text p{
+  margin-bottom: 0px;
+}
+
+/* footer */
+
+footer{
+  background-color: var(--black-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--normal);
+  padding: var(--space);
+  color: var(--white-color);
+}
+
+footer a{
+  color: var(--white-color);
+  list-style: none;
+  text-decoration: none;
 }
