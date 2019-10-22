@@ -1,0 +1,70 @@
+
+
+/* creamos un clase que se llamara fadeIt */
+.fadeIt{
+  /* recuerda agregar webkit para que todos los navegadores nuevos y viejos entiendan las instrucciones */
+  -webkit-animation-duration:4s;
+  -webkit-animation-fill-mode: both;
+  /* fadeIt nesesitara un animation-duration  */
+  /* es el tiempo de duracion de la animacion */
+  animation-duration: 4s;
+  /* la animacion va cumplir de ida y de regreso */
+  animation-fill-mode:both;
+  /* esto le asigna un nombre a nuestra animacion */
+  animation-name: fadeIt;
+}
+
+/* tambien necesitaremos los @keyframes */
+/* le asignamso el nombre de la animacion */
+@keyframes fadeIt {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.fadeInDown{
+  -webkit-animation-duration:1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+  from{
+    opacity: 0;
+    -webkit-transform: translate3d(0,-100%,0);
+    transform: translate3d(0,-100%,0);
+  }
+  to{
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+}
+
+.fadeInUp{
+  -webkit-animation-duration:1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from{
+    opacity: 0;
+    -webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+  }
+  to{
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+  }
+}
