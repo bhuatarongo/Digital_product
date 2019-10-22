@@ -1,0 +1,26 @@
+/* por debajo de los 600px realizar las siguientes acciones */
+@media (max-width:600px){
+  body{
+    background-color: white;
+  }
+
+  .products{
+    display: inherit;
+    /* o tambien */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    height: auto;
+  }
+
+  .product{
+    margin-top: auto;
+  }
+
+  .main_section{
+    padding: 4%;
+  }
+
+  .beneficios, .menciones{
+    display: inherit;
+  }
+}
