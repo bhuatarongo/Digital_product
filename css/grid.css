@@ -51,9 +51,10 @@
 }
 
 .col-1 img,.col-2 img,.col-3 img,.col-4 img,.col-5 img,.col-6 img,.col-7 img,.col-8 img,.col-9 img,.col-10 img,.col-11 img,.col-12 img{
-  width: 50%;
+  width: 100%;
   padding: 10px;
   margin-left: 50px;
+  max-width: 150px;
 }
 
 .no-desk{

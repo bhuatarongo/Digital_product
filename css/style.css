@@ -218,6 +218,31 @@ width: 100%;
   margin-bottom: 0px;
 }
 
+
+/* ----------- venta ----------------------------------------*/
+
+.modulo_pago{
+ background-color: var(--white-color);
+ box-shadow: var(--box);
+ padding: var(--space);
+}
+
+.col-4 img{
+  margin-left: 0px;
+  padding: 0px;
+}
+
+.modulo_pago_images{
+  max-width: 150px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+}
+
+
+
+
+
 /* footer */
 
 footer{
