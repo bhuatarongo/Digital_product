@@ -1,7 +1,7 @@
 
 
 /* creamos un clase que se llamara fadeIt */
-.fadeIt{
+.fadeIn{
   /* recuerda agregar webkit para que todos los navegadores nuevos y viejos entiendan las instrucciones */
   -webkit-animation-duration:4s;
   -webkit-animation-fill-mode: both;
@@ -11,12 +11,12 @@
   /* la animacion va cumplir de ida y de regreso */
   animation-fill-mode:both;
   /* esto le asigna un nombre a nuestra animacion */
-  animation-name: fadeIt;
+  animation-name: fadeIn;
 }
 
 /* tambien necesitaremos los @keyframes */
 /* le asignamso el nombre de la animacion */
-@keyframes fadeIt {
+@keyframes fadeIn {
   from{
     opacity: 0;
   }
