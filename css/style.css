@@ -19,6 +19,7 @@
 --box:0 0 1px #b4b4b4;
 }
 
+
 /* * */
  html,body{
    /* espaciado que tiene hacia dentro */
@@ -266,6 +267,12 @@ label{
 
 /* footer */
 
+/* cambiar el html para mantener el footer abajo */
+html{
+  min-height: 100%;
+  position: relative;
+}
+
 footer{
   background-color: var(--black-color);
   display: flex;
@@ -274,10 +281,16 @@ footer{
   font-size: var(--normal);
   padding: var(--space);
   color: var(--white-color);
+  /* mantener el footer abajo */
+  width: 100%;
+  box-sizing: border-box;
+  /* para que mermanesca en pantalla siempre FIXED y para que este al final de la pag ABSOLUTE y cambiar el html */
+  position: absolute;
+  bottom: 0px;
 }
 
 footer a{
-  color: var(--white-color);
+  color: var(--green-color);
   list-style: none;
   text-decoration: none;
 }
